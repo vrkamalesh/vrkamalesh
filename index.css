@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  /*Navbar*/
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 49, 47);
+    position: sticky;
+    top: 0;
+    
+    
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  .navbar ul li{
+    font-style: oblique;
+    font-size:40px;
+    font-weight: bold;
+    
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: rgb(38, 150, 247);
+    padding: 8px 25px;
+    transition: all .5s ease;
+  }
+  .navbar ul li a:hover{
+    background-color: rgb(166, 211, 243);
+    color:rgb(23, 22, 22);
+    box-shadow: 0 0 10px rgb(24, 4, 238);
+    border-radius: 30px;
+  }
+
+  /*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background: url('img/picture5.jpg') no-repeat center center/cover;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(14, 14, 17);
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1000px;
+    width: 120px;
+    z-index: -1;
+    opacity: -8;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  right: 450px;
+}
+.heading{
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+/*about Section*/
+#about{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(4, 4, 119);
+  color: white;
+}
+#pic{
+  display: flex;
+}
+#me{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 120px;
+  margin-left: 250px;
+  margin-bottom: 1500px;
+  position:absolute;
+  top: 1090px;
+  
+ 
+}
+
+
+/*Servies Section*/
+#services{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(4, 4, 119);
+  color: white;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 2px solid white;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+}
+/*Portfolio Section*/
+#portfolio{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(4, 4, 119);
+  color: white;
+  height: 1300px;
+
+}
+.link1{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin-right:800px;
+}
+.link2{
+  display: flex;
+  flex-direction: column;
+  
+}
+.link3{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin-right:800px;
+}
+.link4{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+
+}
+.link5{
+  display: flex;
+  flex-direction: column;
+   width:100px;
+  height: 100px;
+  margin-bottom:900px ;
+} 
+a{
+  color: #0ce9f0;
+}
+.image{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.image img{
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+/*Contact Section*/
+#contact{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgb(4, 4, 119);
+  color: white;
+  padding: 18px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+.input{
+  padding: 12px;
+  margin: 15px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+#msg{
+  width: 300px;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  outline: none;
+}
+#send{
+  padding: 10px;
+  width: 100px;
+  margin-right: 190px;
+  border: 2px;
+  outline: none;
+}
+#send:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
+.map{
+  position: relative;
+  bottom: 500px;
+  height: 20px;
+}
+
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+
+
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+
+
+/* spacing on all sections */
+
+#about, #services, #portfolio, #contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+#contact {
+  padding-bottom: 4rem;
+}
